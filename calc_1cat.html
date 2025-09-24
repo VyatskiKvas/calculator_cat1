@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Классический калькулятор</title>
+    <style>
+      body {
+        text-align: center;
+        font-size: 30px;
+      }
+      #result {
+        text-align: center;
+        font-size: 30px;
+      }
+      button {
+        font-size: 20px;
+      }
+      input[type="number"] {
+        opacity: 1;
+        color: black;
+        padding: 5px 10px;
+        font-size: 18px;
+      }
+      input[type="text"] {
+        opacity: 1;
+        color: black;
+        padding: 5px 10px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Классический калькулятор</h2>
+
+    <p>Введите числа и операцию:</p>
+    <input id="a" type="number" placeholder="Первое намбер" />
+    <input id="b" type="number" placeholder="Второе намбер" />
+    <input id="op" type="text" placeholder="+, -, *, /" />
+    <button onclick="calq()">Посчитать</button>
+
+    <p>Ответ:</p>
+    <div id="result"></div>
+    <script>
+      function calq() {
+        const result = document.getElementById("result");
+        result.innerHTML = `<img src=13.jpeg width = 500>
+        <p>Ты чё сам не умеешь считать?</p>`;
+      }
+    </script>
+  </body>
+</html>
